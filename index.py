@@ -13,7 +13,10 @@ def fetchTweets():
         if tweets is None:
             return jsonify({"Error": "Not Found"}), 404
         else:
-            return jsonify({"tweets": tweets}), 200
+            return jsonify({"tweets": map(convertToJson, tweets)}), 200
+
+def convertToJson(tweet):
+    return tweet._json
 
 if __name__ == '__main__':
     app.run(debug=True)

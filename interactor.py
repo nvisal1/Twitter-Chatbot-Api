@@ -1,4 +1,5 @@
-
+from twitterDriver import get_all_tweets
 
 def buildTweetQuery(text):
-    return "hello"
+    tweets = get_all_tweets(text)
+    return tweets
