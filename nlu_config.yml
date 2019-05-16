@@ -8,11 +8,10 @@ pipeline:
 - name: "EntitySynonymMapper"
 - name: "SklearnIntentClassifier"
 - name: "DucklingHTTPExtractor"
-# url of the running duckling server
-url: "http://localhost:8000"
-# dimensions to extract
-# dimensions: ["time"]
-
+  # url of the running duckling server
+  url: "http://localhost:8000"
+  # dimensions to extract
+  dimensions: ["time"]
 
 # pipeline: 
 # # - name: "pretrained_embeddings_spacy"

@@ -81,8 +81,10 @@
             "class": "rasa_nlu.classifiers.sklearn_intent_classifier.SklearnIntentClassifier"
         },
         {
-            "dimensions": null,
-            "url": null,
+            "dimensions": [
+                "time"
+            ],
+            "url": "http://localhost:8000",
             "locale": null,
             "timezone": null,
             "name": "DucklingHTTPExtractor",
@@ -90,6 +92,6 @@
         }
     ],
     "training_data": "training_data.json",
-    "trained_at": "20190516-173836",
+    "trained_at": "20190516-174451",
     "rasa_nlu_version": "0.15.0"
 }

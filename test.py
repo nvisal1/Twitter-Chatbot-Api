@@ -6,5 +6,5 @@ from rasa_nlu.model import Interpreter
 # where model_directory points to the model folder
 interpreter = Interpreter.load('./models/current/nlu')
 
-x = interpreter.parse(u"Show me tweets from @united in 10 minutes mentioning about the environment")
+x = interpreter.parse(u"Show me tweets from @united in the last three weeks mentioning about the environment")
 print(x)
