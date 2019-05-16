@@ -1,0 +1,389 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "searchcompany",
+        "entities": [
+          {
+            "start": 26,
+            "end": 34,
+            "value": "#TowsonU",
+            "entity": "hashtag"
+          }
+        ],
+        "text": "Show me all tweets having #TowsonU"
+      },
+      {
+        "intent": "searchcompany",
+        "entities": [
+          {
+            "start": 20,
+            "end": 32,
+            "value": "#TeslaMotors",
+            "entity": "hashtag"
+          }
+        ],
+        "text": "Show me tweets with #TeslaMotors"
+      },
+      {
+        "intent": "searchcompany",
+        "entities": [
+          {
+            "start": 20,
+            "end": 27,
+            "value": "#google",
+            "entity": "hashtag"
+          }
+        ],
+        "text": "Show me tweets with #google"
+      },
+      {
+        "intent": "searchcompany",
+        "entities": [
+          {
+            "start": 24,
+            "end": 29,
+            "value": "Apple",
+            "entity": "company"
+          }
+        ],
+        "text": "Show me all tweets from Apple"
+      },
+      {
+        "intent": "searchcompany",
+        "entities": [
+          {
+            "start": 22,
+            "end": 26,
+            "value": "Ford",
+            "entity": "company"
+          }
+        ],
+        "text": "Show me all tweets by Ford"
+      },
+      {
+        "intent": "searchcompany",
+        "entities": [
+          {
+            "start": 23,
+            "end": 28,
+            "value": "Apple",
+            "entity": "company"
+          }
+        ],
+        "text": "Show me some tweets by Apple"
+      },
+      {
+        "intent": "searchcompany",
+        "entities": [
+          {
+            "start": 9,
+            "end": 12,
+            "value": "BGE",
+            "entity": "company"
+          }
+        ],
+        "text": "What has BGE said"
+      },
+      {
+        "intent": "searchcompany",
+        "entities": [
+          {
+            "start": 24,
+            "end": 40,
+            "value": "General Electric",
+            "entity": "company"
+          }
+        ],
+        "text": "What is the latest from General Electric"
+      },
+      {
+        "intent": "searchcompany",
+        "entities": [
+          {
+            "start": 9,
+            "end": 15,
+            "value": "Costco",
+            "entity": "company"
+          }
+        ],
+        "text": "What has Costco posted"
+      },
+      {
+        "intent": "searchcompany",
+        "entities": [
+          {
+            "start": 9,
+            "end": 18,
+            "value": "Ally Bank",
+            "entity": "company"
+          }
+        ],
+        "text": "What has Ally Bank posted lately"
+      },
+      {
+        "intent": "searchcompany",
+        "entities": [
+          {
+            "start": 16,
+            "end": 22,
+            "value": "Google",
+            "entity": "company"
+          }
+        ],
+        "text": "What's new with Google"
+      },
+      {
+        "intent": "searchcompany",
+        "entities": [
+          {
+            "start": 9,
+            "end": 15,
+            "value": "Google",
+            "entity": "company"
+          }
+        ],
+        "text": "What has Google been up to"
+      },
+      {
+        "intent": "searchcompany",
+        "entities": [
+          {
+            "start": 9,
+            "end": 14,
+            "value": "Apple",
+            "entity": "company"
+          }
+        ],
+        "text": "What has Apple been working on"
+      },
+      {
+        "intent": "searchcompany",
+        "entities": [
+          {
+            "start": 9,
+            "end": 15,
+            "value": "Google",
+            "entity": "company"
+          }
+        ],
+        "text": "What has Google posted recently"
+      },
+      {
+        "intent": "searchcompany",
+        "entities": [
+          {
+            "start": 20,
+            "end": 27,
+            "value": "@united",
+            "entity": "handle"
+          },
+          {
+            "start": 38,
+            "end": 49,
+            "value": "environment",
+            "entity": "topic"
+          }
+        ],
+        "text": "Show me tweets from @united about the environment"
+      },
+      {
+        "intent": "searchcompany",
+        "entities": [
+          {
+            "start": 9,
+            "end": 16,
+            "value": "@united",
+            "entity": "handle"
+          },
+          {
+            "start": 28,
+            "end": 34,
+            "value": "health",
+            "entity": "topic"
+          }
+        ],
+        "text": "What has @united mentioning health"
+      },
+      {
+        "intent": "memes",
+        "entities": [
+          {
+            "start": 32,
+            "end": 39,
+            "value": "kitties",
+            "entity": "topic"
+          }
+        ],
+        "text": "Show me some fun pictures about kitties"
+      },
+      {
+        "intent": "memes",
+        "entities": [
+          {
+            "start": 19,
+            "end": 23,
+            "value": "cats",
+            "entity": "topic"
+          }
+        ],
+        "text": "I want to see cute cats"
+      },
+      {
+        "intent": "memes",
+        "entities": [
+          {
+            "start": 13,
+            "end": 17,
+            "value": "dogs",
+            "entity": "topic"
+          }
+        ],
+        "text": "Show me cute dogs"
+      },
+      {
+        "intent": "memes",
+        "entities": [
+          {
+            "start": 14,
+            "end": 18,
+            "value": "cats",
+            "entity": "topic"
+          }
+        ],
+        "text": "Show me silly cats"
+      },
+      {
+        "intent": "memes",
+        "entities": [
+          {
+            "start": 20,
+            "end": 24,
+            "value": "cats",
+            "entity": "topic"
+          }
+        ],
+        "text": "Show me pictures of cats"
+      },
+      {
+        "intent": "memes",
+        "entities": [
+          {
+            "start": 14,
+            "end": 21,
+            "value": "pooches",
+            "entity": "topic"
+          }
+        ],
+        "text": "Show me funny pooches"
+      },
+      {
+        "intent": "memes",
+        "entities": [
+          {
+            "start": 17,
+            "end": 24,
+            "value": "kittens",
+            "entity": "topic"
+          }
+        ],
+        "text": "Show me adorable kittens"
+      },
+      {
+        "intent": "memes",
+        "entities": [
+          {
+            "start": 20,
+            "end": 24,
+            "value": "pets",
+            "entity": "topic"
+          }
+        ],
+        "text": "I want to see funny pets"
+      },
+      {
+        "intent": "memes",
+        "entities": [
+          {
+            "start": 18,
+            "end": 21,
+            "value": "dog",
+            "entity": "topic"
+          }
+        ],
+        "text": "Show me some dank dog memes"
+      },
+      {
+        "intent": "memes",
+        "entities": [
+          {
+            "start": 8,
+            "end": 11,
+            "value": "cat",
+            "entity": "topic"
+          }
+        ],
+        "text": "Show me cat memes"
+      }
+    ],
+    "regex_features": [
+      {
+        "name": "handle",
+        "pattern": "@[0-z]+"
+      },
+      {
+        "name": "hashtag",
+        "pattern": "\\#[0-z]+"
+      }
+    ],
+    "lookup_tables": [
+      {
+        "name": "topic",
+        "elements": [
+          "dogs",
+          "pups",
+          "puppies",
+          "doggies",
+          "hounds",
+          "pooches",
+          "tail-waggers",
+          "bowwows",
+          "woofers",
+          "cats",
+          "kitties",
+          "kittens",
+          "quadrupeds",
+          "floofs",
+          "kitters",
+          "pets",
+          "environment",
+          "nature",
+          "outdoors",
+          "health"
+        ]
+      },
+      {
+        "name": "company",
+        "elements": [
+          "Apple",
+          "Google",
+          "Best Buy",
+          "Ford",
+          "Ally Bank"
+        ]
+      }
+    ],
+    "entity_synonyms": [
+      {
+        "value": "fun",
+        "synonyms": [
+          "funny",
+          "amusing",
+          "entertaining",
+          "lively",
+          "pleasant"
+        ]
+      }
+    ]
+  }
+}

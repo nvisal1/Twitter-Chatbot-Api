@@ -1,0 +1,18 @@
+[
+    {
+        "name": "handle",
+        "pattern": "@[0-z]+"
+    },
+    {
+        "name": "hashtag",
+        "pattern": "\\#[0-z]+"
+    },
+    {
+        "name": "topic",
+        "pattern": "(?i)(\\bdogs\\b|\\bpups\\b|\\bpuppies\\b|\\bdoggies\\b|\\bhounds\\b|\\bpooches\\b|\\btail\\-waggers\\b|\\bbowwows\\b|\\bwoofers\\b|\\bcats\\b|\\bkitties\\b|\\bkittens\\b|\\bquadrupeds\\b|\\bfloofs\\b|\\bkitters\\b|\\bpets\\b|\\benvironment\\b|\\bnature\\b|\\boutdoors\\b|\\bhealth\\b)"
+    },
+    {
+        "name": "company",
+        "pattern": "(?i)(\\bApple\\b|\\bGoogle\\b|\\bBest\\ Buy\\b|\\bFord\\b|\\bAlly\\ Bank\\b)"
+    }
+]

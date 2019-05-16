@@ -1,8 +1,8 @@
 from twitterDriver import get_all_tweets
 
 def buildTweetQuery(text):
-    tweets = get_all_tweets(text)
-    return tweets
+  tweets = get_all_tweets(text)
+  return tweets
 
 def extract_hash_tags(text):
   """Extracts and returns a set of hashtags found in a text block"""
