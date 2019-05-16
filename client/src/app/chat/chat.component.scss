@@ -1,13 +1,15 @@
 .chat {
   font-family: sans-serif;
   width: 500px;
-  min-height: 500px;
+  min-height: 600px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   display: flex;
   flex-direction: column;
   justify-content: stretch;
   align-items: stretch;
+  margin: auto;
+  background-color: white;
 }
 
 .chat__window {

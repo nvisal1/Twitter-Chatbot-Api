@@ -41,8 +41,16 @@ export class ChatComponent implements OnInit {
   }
 
   async sendMessage(text: string) {
-    const messages = await this.message.send(text);
-    console.log(messages);
+    if (text === 'clear') {
+      this.messages = [];
+    } else {
+      this.messages.push({text, owned: true});
+      const tweets = await this.message.send(text);
+      console.log(tweets);
+      tweets.tweets.forEach(tweet => {
+        this.messages.push({text: tweet.text});
+      });
+    }
   }
 
   trackby(index, item) {
