@@ -1,0 +1,10 @@
+<div class="chat">
+  <div class="chat__window" [@stagger]="messages.length">
+    <div *ngFor="let message of messages; trackBy: trackby" class="message" [ngClass]="{'message--owned': message.owned}">
+      {{ message.text }}
+    </div>
+  </div>
+  <div class="chat__interaction">
+    <input (focus)="focused = true" (blur)="focused = false" [(ngModel)]="input" type="text" placeholder="Type your message here" />
+  </div>
+</div>
