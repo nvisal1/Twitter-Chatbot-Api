@@ -3,3 +3,4 @@
 */package-log.json
 .DS_Store
 creds.json
+env
