@@ -47,9 +47,13 @@ export class ChatComponent implements OnInit {
       this.messages.push({text, owned: true});
       const tweets = await this.message.send(text);
       console.log(tweets);
-      tweets.tweets.forEach(tweet => {
-        this.messages.push({text: tweet.text, photos:tweet.entities});
-      });
+      if (tweets.tweets.length === 0) {
+        this.messages.push({text: "No tweets were found...", photos: {}});
+      } else {
+        tweets.tweets.forEach(tweet => {
+          this.messages.push({text: tweet.text, photos: tweet.entities});
+        });
+      }
     }
   }
 
