@@ -1,5 +1,5 @@
 import { Component, OnInit, HostListener, Input } from '@angular/core';
-import { SocketService } from '../socket-service.service';
+import { MessageService } from '../message.service';
 import { trigger, transition, query, style, stagger, animate } from '@angular/animations';
 
 @Component({
@@ -33,18 +33,16 @@ export class ChatComponent implements OnInit {
     }
   }
 
-  constructor(private socket: SocketService) {
-    this.socket.messages.subscribe(message => {
-      message.owned = message.source === this.socket.id;
-      this.messages.push(message);
-    });
+  constructor(private message: MessageService) {
+   
   }
 
   ngOnInit() {
   }
 
-  sendMessage(text: string) {
-    this.socket.emit(text);
+  async sendMessage(text: string) {
+    const messages = await this.message.send(text);
+    console.log(messages);
   }
 
   trackby(index, item) {
