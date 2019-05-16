@@ -1,9 +1,12 @@
 from flask import Flask, jsonify, request
 from interactor import buildTweetQuery
+from flask_cors import CORS, cross_origin
 
 app = Flask(__name__)
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 @app.route('/actors')
+@cross_origin()
 def fetchTweets():
     text = request.args.get('text')
     if text is None:
