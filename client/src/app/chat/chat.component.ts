@@ -48,7 +48,7 @@ export class ChatComponent implements OnInit {
       const tweets = await this.message.send(text);
       console.log(tweets);
       tweets.tweets.forEach(tweet => {
-        this.messages.push({text: tweet.text});
+        this.messages.push({text: tweet.text, photos:tweet.entities});
       });
     }
   }

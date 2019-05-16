@@ -2,6 +2,11 @@
   <div class="chat__window" [@stagger]="messages.length">
     <div *ngFor="let message of messages; trackBy: trackby" class="message" [ngClass]="{'message--owned': message.owned}">
       {{ message.text }}
+      <div class="message__image" *ngIf="!message.owned && message.photos.media && message.photos.media.length > 0">
+        <div *ngFor="let photo of message.photos.media">
+          <img *ngIf="photo.type=='photo'" src="{{photo.media_url}}" alt="">
+        </div>
+      </div>
     </div>
   </div>
   <div class="chat__interaction">
